@@ -5,5 +5,6 @@
 * PortoAlegre Imposto= área total * 7,5 + área da garagem * 2,5
 * Se não  houver garagem Imposto= área  total* 8
 * Curitiba Imposto= área total
-* Se idadedo imóvel> 50 anos,somar idade * 3.Se idade do imóvel < 20 anos, somar idade * 2
-* Se 20 anos > idade do imóvel > 50 anos, somar idade * 2,5
+  * Se idadedo imóvel> 50 anos,somar idade * 3.
+  * Se idade do imóvel < 20 anos, somar idade * 2
+  * Se 20 anos > idade do imóvel > 50 anos, somar idade * 2,5
