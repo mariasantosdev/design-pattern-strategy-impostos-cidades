@@ -2,10 +2,10 @@ package br.com.strategy.cidades;
 
 import java.math.BigDecimal;
 
-public abstract class Cidade {
+abstract class Cidade {
     protected BigDecimal areaTotal;
 
-    public void setAreaTotal(BigDecimal areaTotal) {
+    protected Cidade(BigDecimal areaTotal) {
         this.areaTotal = areaTotal;
     }
 

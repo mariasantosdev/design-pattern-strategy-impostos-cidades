@@ -8,6 +8,12 @@ public class BeloHorizonte extends Cidade {
 
     private int numeroDeQuartos;
 
+
+    public BeloHorizonte(BigDecimal areaTotal, int numeroDeQuartos) {
+        super(areaTotal);
+        this.numeroDeQuartos = numeroDeQuartos;
+    }
+
     public BigDecimal calculoTotal() {
         return this.calcularArea().add(valueOf(numeroDeQuartos)).multiply(new BigDecimal("2"));
     }

@@ -8,6 +8,11 @@ public class Curitiba extends Cidade {
 
     private int idadeDoImovel;
 
+    public Curitiba(BigDecimal areaTotal, int idadeDoImovel) {
+        super(areaTotal);
+        this.idadeDoImovel = idadeDoImovel;
+    }
+
     public BigDecimal calculoTotal() {
        return IdadesSuportadasParaCalculoDoImposto.calcularImpostoDeRenda(idadeDoImovel);
     }

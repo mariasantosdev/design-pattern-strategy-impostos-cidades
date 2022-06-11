@@ -6,16 +6,16 @@ import java.math.BigDecimal;
 
 public class StrategyCidadesApplication {
     public static void main(String[] args) {
-        BeloHorizonte beloHorizonte = new BeloHorizonte();
-        beloHorizonte.setAreaTotal(new BigDecimal("900.00"));
+        BeloHorizonte beloHorizonte = new BeloHorizonte(new BigDecimal("900.00"), 1);
         System.out.println(beloHorizonte.calculoTotal());
 
-        SaoPaulo saoPaulo = new SaoPaulo();
-        saoPaulo.setAreaTotal(new BigDecimal("900.00"));
+        SaoPaulo saoPaulo = new SaoPaulo(new BigDecimal("900.00"), 4);
         System.out.println(saoPaulo.calculoTotal());
 
-        PortoAlegre portoAlegre = new PortoAlegre();
-        portoAlegre.setAreaTotal(new BigDecimal("900.00"));
+        PortoAlegre portoAlegre = new PortoAlegre(new BigDecimal("900.00"), new BigDecimal("200.00"), true);
         System.out.println(portoAlegre.calculoTotal());
+
+        Curitiba curitiba = new Curitiba(new BigDecimal("900.00"), 10);
+        System.out.println(curitiba.calculoTotal());
     }
 }

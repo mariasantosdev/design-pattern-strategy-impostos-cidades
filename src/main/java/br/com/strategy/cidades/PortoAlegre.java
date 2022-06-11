@@ -7,6 +7,12 @@ public class PortoAlegre extends Cidade {
     private BigDecimal areaDaGaragem;
     private boolean contemGaragem;
 
+    public PortoAlegre(BigDecimal areaTotal, BigDecimal areaDaGaragem, boolean contemGaragem) {
+        super(areaTotal);
+        this.areaDaGaragem = areaDaGaragem;
+        this.contemGaragem = contemGaragem;
+    }
+
     public BigDecimal calculoTotal() {
         if (contemGaragem) {
             return this.calcularArea().add(areaDaGaragem).multiply(new BigDecimal("2"));
