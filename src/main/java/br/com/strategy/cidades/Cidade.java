@@ -3,11 +3,11 @@ package br.com.strategy.cidades;
 import java.math.BigDecimal;
 
 public abstract class Cidade {
-    private BigDecimal areaTotal;
+    protected BigDecimal areaTotal;
 
-    protected BigDecimal calcular() {
-        return calcularArea(areaTotal);
+    public void setAreaTotal(BigDecimal areaTotal) {
+        this.areaTotal = areaTotal;
     }
 
-    protected abstract BigDecimal calcularArea(BigDecimal tamanhoArea);
+    protected abstract BigDecimal calcularArea();
 }

@@ -8,11 +8,11 @@ public class SaoPaulo extends Cidade {
 
     private int numeroDeComodos;
 
-    public BigDecimal calculoTotal(BigDecimal tamanhoArea) {
-        return this.calcularArea(tamanhoArea).add(valueOf(numeroDeComodos)).multiply(new BigDecimal("2"));
+    public BigDecimal calculoTotal() {
+        return this.calcularArea().add(valueOf(numeroDeComodos)).multiply(new BigDecimal("2"));
     }
     @Override
-    protected BigDecimal calcularArea(BigDecimal tamanhoArea) {
-        return tamanhoArea.multiply(new BigDecimal("10"));
+    protected BigDecimal calcularArea() {
+        return areaTotal.multiply(new BigDecimal("10"));
     }
 }

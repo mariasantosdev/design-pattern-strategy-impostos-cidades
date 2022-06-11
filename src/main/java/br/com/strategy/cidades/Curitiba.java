@@ -11,8 +11,9 @@ public class Curitiba extends Cidade {
     public BigDecimal calculoTotal() {
        return IdadesSuportadasParaCalculoDoImposto.calcularImpostoDeRenda(idadeDoImovel);
     }
+
     @Override
-    protected BigDecimal calcularArea(BigDecimal tamanhoArea) {
-        return tamanhoArea.multiply(new BigDecimal("5"));
+    protected BigDecimal calcularArea() {
+        return areaTotal.multiply(new BigDecimal("5"));
     }
 }
